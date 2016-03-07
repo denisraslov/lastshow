@@ -36,18 +36,14 @@ define([
 			{
 				method: 'artist.search',
 				artist: value,
-				limit: limit
+				limit: limit,
+				format: 'json'
 			},
 			function(data)
 			{
-				var artists =  $('artist', data);
-				var artistNames = [];
-
-				for (var i = 0; i < artists.length; i++)
-				{
-					artistNames.push(self.getNodeValue(artists[i], 'name'));
-				}
-
+				var artists = data.results.artistmatches.artist;
+				var artistNames = _.map(artists, function(artist) { return artist.name; });
+		
 				callback(artistNames);
 			});
 		},
