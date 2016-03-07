@@ -1,0 +1,33 @@
+<div>
+    <div class="show-title"><%=(date ? 'Последний концерт' : 'Приблизительный сетлист')%></div>
+
+    <%=
+    (date ?
+    '<div class="show-item">' +
+    '<img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/time-24-16.png" />' +
+    '<span class="show-label">Дата:</span>' +
+    date +
+    '</div>' : '')
+    %>
+    <%=
+    (venue ?
+    '<div class="show-item">' +
+    '<img src="https://cdn2.iconfinder.com/data/icons/maki/100/commerical-building-16.png" />' +
+    '<span class="show-label">Место:</span>' +
+    venue +
+    '</div>' : '')
+    %>
+    <%=
+    (tour ?
+    '<div class="show-item">' +
+        '<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519608-107_Flag-16.png" />' +
+        '<span class="show-label">Тур:</span>' +
+        tour +
+    '</div>' : '')
+    %>
+
+    <div class="show-item">
+    <img src="http://cdn.last.fm/flatness/favicon.2.ico" />
+    <a href="http://lastfm.ru/music/<%= artist %>" target="_blank" class="show-label show-item-link">Посмотреть на Last.fm</a>
+
+</div>

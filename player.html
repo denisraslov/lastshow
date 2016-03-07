@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+    <script src="js/libs/jquery/jquery-min.js" type="text/javascript"></script>
+    <script>
+        var play = function()
+        {
+            getFlash().playSound($('input').val());
+        };
+
+        function getFlash()
+        {
+            var M$ =  navigator.appName.indexOf("Microsoft")!=-1
+
+            return (M$ ? window : document)["Flash"];
+        }
+
+    </script>
+</head>
+<body>
+<input />
+<button onclick="play();">Play</button>
+
+<object id="Flash" width="400" height="200" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+    <param name="movie" value="app.swf" />
+    <param name="allowScriptAccess" value="sameDomain" />
+    <embed src="app.swf" name="Flash" align="middle" play="true" loop="false" quality="high" allowScriptAccess="sameDomain"
+        width="400" height="200" scale="exactfit" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+    </embed>
+</object>
+
+</body>
+</html>

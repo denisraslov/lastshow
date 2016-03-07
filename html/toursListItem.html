@@ -1,0 +1,8 @@
+<a class="<%= active ? 'tourslistitem-active' : '' %>" href="?p=artist&id=<%= encodeURIComponent(artist) + (id ? '&tour=' + encodeURIComponent(id) : '') %>">
+    <div class="tourslistitem-title" title="<%= id %>">
+    <%= id %>
+    </div>
+    <div class="tourslistitem-showscount">
+        <%= showsCount %>
+    </div>
+</a>

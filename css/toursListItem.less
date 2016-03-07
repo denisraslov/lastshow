@@ -1,0 +1,44 @@
+.tourslistitem
+{
+	background: none repeat scroll 0 0 #F5F5F5;
+	border-radius: 11px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	height: 54px;
+	margin: 10px;
+	opacity: 0.85;
+	padding: 11px;
+	position: relative;
+	text-align: left;
+	vertical-align: top;
+	width: 150px;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 0 0 5px #aaa;
+
+	&.tourslistitem-active
+	{
+		background: #FFFCCA;
+
+		.tourslistitem-title
+		{
+			font-weight: bold;
+		}
+	}
+
+	.tourslistitem-title
+	{
+		height: 38px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.tourslistitem-showscount
+	{
+		bottom: 7px;
+		color: #999999;
+		position: absolute;
+		right: 12px;
+	}
+}

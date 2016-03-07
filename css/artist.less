@@ -1,0 +1,72 @@
+
+.artist
+{
+	position: relative;
+	width: 240px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 8px;
+	background: #f5f5f5;
+	text-decoration: none;
+}
+
+.artist,
+.artist-img-wrap
+{
+	height: 156px;
+	min-height: 156px;
+}
+
+.artist-extended
+{
+	height: auto;
+}
+
+.artist-extended .artist-img-wrap
+{
+	border-radius: 8px 8px 0 0;
+}
+
+.artist-extended .artist-title
+{
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	border-radius: 0;
+}
+
+.artist-img-wrap
+{
+	position: relative;
+	width: 240px;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 8px;
+}
+
+.artist-title
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 8px 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	font-size: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 0 0 8px 8px;
+}
+
+.artist-img
+{
+	width: 240px;
+}
+
+.artist-loader
+{
+	position: absolute;
+	top: 60px;
+}

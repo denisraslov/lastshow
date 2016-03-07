@@ -1,0 +1,13 @@
+<<%= (isLink ? 'a' : 'div') %>
+    value="<%= id %>"
+    href="/?p=artist&id=<%= escape(id) %>"
+    class="<%= (additionHtml ? 'artist-extended' : '') %>" >
+        <div class="artist-img-wrap">
+            <img src="" class="artist-img" />
+            <img src="http://loadinggif.com/images/image-selection/1.gif" class="artist-loader" />
+            <div class="artist-title">
+                <%= id %>
+            </div>
+        </div>
+        <%= additionHtml %>
+</ <%= (isLink ? 'a' : 'div') %>

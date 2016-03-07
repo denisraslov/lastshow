@@ -1,0 +1,10 @@
+{
+  "name": "lastshow",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-ftpush": "^0.3.3"
+  }
+}
